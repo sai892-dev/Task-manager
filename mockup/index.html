@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management Application</title>
+    <meta name="description" content="Task management application assignment details">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-layer-group"></i>
+                <h2>TaskMaster</h2>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active"><i class="fa-solid fa-border-all"></i> Dashboard</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-list-check"></i> My Tasks</a>
+                <a href="#" class="nav-item"><i class="fa-regular fa-calendar-days"></i> Calendar</a>
+                <a href="#" class="nav-item"><i class="fa-solid fa-gear"></i> Settings</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <div class="header-text">
+                    <h1 class="page-title">Dashboard</h1>
+                    <p class="page-subtitle">Welcome back! Here are your available assignments.</p>
+                </div>
+                <div class="user-profile">
+                    <div class="search-bar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search tasks...">
+                    </div>
+                    <img src="https://ui-avatars.com/api/?name=John+Doe&background=2563eb&color=fff&rounded=true" alt="User Profile" class="avatar">
+                </div>
+            </header>
+
+            <div class="task-grid">
+                <!-- Task 1 (Original) -->
+                <div class="card" style="animation-delay: 0s;">
+                    <div class="card-header">
+                        <div class="badge-number">2</div>
+                        <div class="badge-status">AVAILABLE</div>
+                    </div>
+                    <div class="date-info">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>Due Date: <span class="date-strong">15 May 2026</span></span>
+                    </div>
+                    <div class="overdue-badge">
+                        Overdue by 14 Days
+                    </div>
+                    <hr class="divider">
+                    <h1 class="title">Task Management Application</h1>
+                    <p class="description">
+                        Develop a task management web application for creating, updating, and tracking tasks.
+                    </p>
+                    <h2 class="section-title text-blue">Key Features:</h2>
+                    <ul class="feature-list">
+                        <li>User authentication & authorization</li>
+                        <li>CRUD operations for tasks</li>
+                        <li>Real-time updates (optional: using WebSockets)</li>
+                        <li>Responsive design for web and mobile screens</li>
+                    </ul>
+                    <h2 class="section-title text-green">Expected Outcome:</h2>
+                    <p class="outcome">
+                        Learn full-stack application structure, API integration, and dynamic data handling.
+                    </p>
+                    <div class="action-container">
+                        <button class="submit-btn">Submit Work</button>
+                    </div>
+                </div>
+
+                <!-- Task 2 -->
+                <div class="card" style="animation-delay: 0.1s;">
+                    <div class="card-header">
+                        <div class="badge-number" style="background-color: var(--green-100); color: var(--green-600);">3</div>
+                        <div class="badge-status" style="background-color: var(--green-100); color: var(--green-600);">IN PROGRESS</div>
+                    </div>
+                    <div class="date-info">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>Due Date: <span class="date-strong">20 May 2026</span></span>
+                    </div>
+                    <div class="overdue-badge" style="background-color: transparent; color: transparent; user-select: none; box-shadow: none;">
+                        &nbsp;
+                    </div>
+                    <hr class="divider">
+                    <h1 class="title">E-commerce API Integration</h1>
+                    <p class="description">
+                        Integrate Stripe payment gateway and build RESTful API endpoints for the shopping cart.
+                    </p>
+                    <h2 class="section-title text-blue">Key Features:</h2>
+                    <ul class="feature-list">
+                        <li>Stripe Checkout integration</li>
+                        <li>Webhook handling for payment status</li>
+                        <li>Cart session management</li>
+                        <li>Invoice generation (PDF)</li>
+                    </ul>
+                    <h2 class="section-title text-green">Expected Outcome:</h2>
+                    <p class="outcome">
+                        Understand third-party API integration, secure payment flows, and webhooks.
+                    </p>
+                    <div class="action-container">
+                        <button class="submit-btn" style="background-color: var(--green-600);">Continue Work</button>
+                    </div>
+                </div>
+
+                <!-- Task 3 -->
+                <div class="card" style="animation-delay: 0.2s;">
+                    <div class="card-header">
+                        <div class="badge-number" style="background-color: var(--orange-100); color: var(--orange-600);">4</div>
+                        <div class="badge-status" style="background-color: var(--orange-100); color: var(--orange-600);">PENDING REVIEW</div>
+                    </div>
+                    <div class="date-info">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>Due Date: <span class="date-strong">10 May 2026</span></span>
+                    </div>
+                    <div class="overdue-badge" style="background-color: transparent; color: transparent; user-select: none; box-shadow: none;">
+                        &nbsp;
+                    </div>
+                    <hr class="divider">
+                    <h1 class="title">Dashboard UI Refactor</h1>
+                    <p class="description">
+                        Refactor the legacy dashboard code to use modern CSS Grid and custom properties.
+                    </p>
+                    <h2 class="section-title text-blue">Key Features:</h2>
+                    <ul class="feature-list">
+                        <li>Migrate from Bootstrap to CSS Grid</li>
+                        <li>Implement CSS custom properties</li>
+                        <li>Improve accessibility score to 100</li>
+                        <li>Ensure mobile responsiveness</li>
+                    </ul>
+                    <h2 class="section-title text-green">Expected Outcome:</h2>
+                    <p class="outcome">
+                        Master modern CSS layouts and improve frontend performance and maintainability.
+                    </p>
+                    <div class="action-container">
+                        <button class="submit-btn" style="background-color: var(--text-muted); cursor: not-allowed; box-shadow: none;" disabled>Under Review</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
