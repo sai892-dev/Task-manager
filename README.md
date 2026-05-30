@@ -1,5 +1,10 @@
 # Task Manager 🚀
 
+## 🌐 Live Demo
+You can try out the live version of this application here: **[Live Demo Link](https://moody-comics-shake.loca.lt)**
+
+*(Note: The live demo is hosted via a secure localtunnel. If you see a "Localtunnel Reminder" page, simply click the blue "Click to Continue" button to view the app!)*
+
 A modern, full-stack Task Management application built with React, Node.js, and real-time WebSockets.
 
 ## 🌟 Features
